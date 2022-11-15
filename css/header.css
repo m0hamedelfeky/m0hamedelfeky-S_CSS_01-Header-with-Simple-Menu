@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav{
+    padding: 0 33px;
+    background-color: #e3d803;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .links{
+    display: flex;
+   
+}
+
+.nav .links a{
+    color: aliceblue;
+}
+
+.nav a{
+    text-decoration: none;
+}
+
+.nav a:hover{
+    text-decoration: underline;
+}
+
+.navBar{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.menu .menuLinks{
+    display: flex;
+    gap: 15px;
+}
+
+.menu .menuLinks li:first-of-type{
+    padding-left: 10px;
+}
+
+.menu .menuLinks a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.menu .menuLinks a:hover{
+    text-decoration: underline;
+}
+
+.menu .Category{
+    display: flex;
+}
+
+.menu .Category ul{
+    display: none;
+}
+
+.menu .Category .catList{
+    background-color: rgb(255, 255, 255);
+    padding: 15px 100px;
+    margin: 7px 0;
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+
+.menu .Category .catList > div::after {
+    content: "";
+    display: inline-block;
+    border-top: 5px solid rgb(4, 15, 224);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    margin-left: 7px;
+}
+
+
+
+.menu .Category .catList:hover{
+    background-color: aliceblue;
+}
+
+.menu .Category .catList:hover ul{
+    display: block;
+}
+
+.menu .Category .catList{
+    position: relative;
+}
+
+.menu .Category .catList ul{
+    position: absolute;
+    top: 100%;
+    background-color: rgb(48, 40, 40);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    max-width: 100%;
+    right: 0;
+    left: 0;
+    padding: 5px 40%;
+}
+
+.menu .Category .catList ul a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.menu .Category .catList ul a:hover{
+    text-decoration: underline;
+}
+
+.menuLinks .catList ul{
+    display: none;
+}
+
+.menuLinks .catList div:first-of-type{
+    color: rgb(255, 255, 255);
+}
+
+.menuLinks .catList{
+    cursor: pointer;
+}
+
+.menuLinks .catList:hover{
+    background-color: aliceblue;
+}
+
+.menuLinks .catList:hover ul{
+    display: block;
+}
+
+.menuLinks .catList{
+    position: relative;
+}
+
+.menuLinks .catList ul{
+    position: absolute;
+    top: 100%;
+    background-color: rgb(48, 40, 40);
+    border: 1px solid rgb(255, 255, 255);
+    min-width: 150%;
+    right: 0;
+    left: 0;
+    padding: 5px 40%;
+}
+
+.menuLinks .catList ul a{
+    font-size: 80%;
+}
+
+.menuLinks .catList > div::after {
+    content: "";
+    display: inline-block;
+    border-top: 5px solid rgb(255, 255, 255);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    margin-left: 7px;
